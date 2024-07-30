@@ -6,4 +6,4 @@ ADD . /code
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "./app/test_api.py"]
+CMD ["python", "./app/guardian-grafana.py"]
