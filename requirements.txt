@@ -3,4 +3,4 @@ flask-restful==0.3.9
 requests==2.27.1
 configparser==5.2.0
 json5==0.9.6
-Werkzeug==0.16.1
+Werkzeug==2.2.2
