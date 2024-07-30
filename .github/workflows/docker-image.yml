@@ -28,7 +28,7 @@ jobs:
     - name: Build and push Docker image (versioned)
       uses: docker/build-push-action@v4
       with:
-          context:
+          context: .
           push: true
-          platforms: linux/amd64
-          tags: kevinkho/webhook:latest
+          platforms: "linux/amd64"
+          tags: "kevinkho/webhook:latest"
