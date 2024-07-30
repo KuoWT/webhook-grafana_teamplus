@@ -22,6 +22,7 @@ jobs:
     - name: Build and push to dockerhub
       uses: docker/build-push-action@v5
       with:
-       context:
+       context: .
        push: true
        tags: kevinkho/webhook-grafana_teamplus:latest
+      
