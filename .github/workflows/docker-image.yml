@@ -18,11 +18,11 @@ jobs:
       with:
        username: ${{ secrets.DOCKERHUB_USERNAME }}
        password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-    - name: Build and push to dockerhub
-      uses: docker/build-push-action@v5
-      with:
-       context: .
-       push: true
-       tags: kevinkho/webhook-grafana_teamplus:latest
       
+    - name: Build and push Docker image (versioned)
+      uses: docker/build-push-action@v4
+      with:
+          context: .
+          push: true
+          platforms: linux/amd64
+          tags: "kevinkho/webhook-grafana_teamplus:latest"
